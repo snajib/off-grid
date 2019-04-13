@@ -12,6 +12,7 @@ import CoreLocation
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
     
+    
     //UI Stuff
     @IBOutlet weak var CompassHeading: UILabel!
     @IBOutlet weak var StepCounter: UILabel!

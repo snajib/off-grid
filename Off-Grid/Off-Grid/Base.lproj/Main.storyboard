@@ -18,18 +18,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEs-EF-ueM">
-                                <rect key="frame" x="31" y="49" width="49" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEs-EF-ueM">
+                                <rect key="frame" x="31" y="92" width="49" height="38"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="mEs-EF-ueM" secondAttribute="height" multiplier="49:38" id="Ibr-E1-DKQ"/>
+                                    <constraint firstAttribute="width" constant="49" id="TiF-lC-8Le"/>
+                                    <constraint firstAttribute="height" constant="38" id="kZu-Mi-cWP"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95E-vE-8Vo">
-                                <rect key="frame" x="126" y="565" width="123" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Eo-E6-fNC">
+                                <rect key="frame" x="31" y="153" width="49" height="38"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1Eo-E6-fNC" secondAttribute="height" multiplier="49:38" id="OgQ-Xf-Bn7"/>
+                                    <constraint firstAttribute="width" constant="49" id="c3D-Lm-ego"/>
+                                    <constraint firstAttribute="height" constant="38" id="dsN-rb-Ffn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95E-vE-8Vo">
+                                <rect key="frame" x="146" y="752" width="123" height="40"/>
                                 <color key="backgroundColor" red="0.22285987639999999" green="1" blue="0.1662372339" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3oe-Px-UpO"/>
+                                    <constraint firstAttribute="width" secondItem="95E-vE-8Vo" secondAttribute="height" multiplier="123:40" id="gxz-dS-nyT"/>
+                                    <constraint firstAttribute="width" constant="123" id="pJK-HD-gKb"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
                                 <state key="normal" title="Start">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -38,16 +57,22 @@
                                     <action selector="startStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E65-Uy-MNC"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Eo-E6-fNC">
-                                <rect key="frame" x="31" y="110" width="49" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="mEs-EF-ueM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="GmG-RJ-D0i"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="95E-vE-8Vo" secondAttribute="trailing" constant="145" id="Rta-OC-hdS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="95E-vE-8Vo" secondAttribute="bottom" constant="70" id="erT-xP-rGh"/>
+                            <constraint firstItem="1Eo-E6-fNC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="m65-F0-R2L"/>
+                            <constraint firstItem="1Eo-E6-fNC" firstAttribute="top" secondItem="mEs-EF-ueM" secondAttribute="bottom" constant="23" id="mT0-52-5DM"/>
+                            <constraint firstItem="mEs-EF-ueM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="nZT-PW-IRF"/>
+                            <constraint firstItem="95E-vE-8Vo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="146" id="qth-o1-gWe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="b8y-5z-exp" appends="YES" id="MDd-3e-zUb"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="CompassHeading" destination="mEs-EF-ueM" id="gO4-gf-MAx"/>
@@ -56,6 +81,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="b8y-5z-exp">
+                    <connections>
+                        <outlet property="delegate" destination="8bC-Xf-vdC" id="3pa-JW-5RJ"/>
+                    </connections>
+                </pinchGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-204" y="64"/>
         </scene>
