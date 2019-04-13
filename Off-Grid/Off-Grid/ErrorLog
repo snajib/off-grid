@@ -1,0 +1,9 @@
+Error: When running the app, the pedometer and data capturing run on loops that work out in such a way that the data is seperated out based on each loop. When the screen of the phone is turned off. This does not occur. The pedometer and loops are not taken into effect. Although the pedometer and compass are still active while turned off, the phone updates the masterArray with a data set of "bulk steps." If the user took 12 steps with the app on, then turned the screen off, and took 100 more steps and turned the screen on after 100 steps, data in masterArray with have a data entry for 12 new steps as the first point. But the second data entry will have 88 new steps instead of partitioned entries with small steps taken.
+
+Find Out: Find out if the screen allows points out of boundary of user's view
+
+List of things to do:
+    Basic Functionality:
+        Find out how to draw images larger than the iphone screen with maybe a scroll function to view the entire image or with a zoom in/out function
+        Add character representation that spins on compass axis and spins line based on current compass heading
+        
